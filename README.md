@@ -43,10 +43,10 @@ C++ 스터디
         <td align="center">9 - 10</td>
     </tr>
     <tr>
-        <td align="center">:white_circle:</td>
-        <td align="center">:white_circle:</td>
-        <td align="center">:white_circle:</td>
-        <td align="center">:white_circle:</td>
+        <td align="center">&nbsp;</td>
+        <td align="center">&nbsp;</td>
+        <td align="center">&nbsp;</td>
+        <td align="center">&nbsp;</td>
     </tr>
     <tr>
         <td rowspan='2' align="center">2</td>
@@ -57,10 +57,10 @@ C++ 스터디
         <td align="center">18 - 19</td>
     </tr>
     <tr>
-        <td align="center">:white_circle:</td>
-        <td align="center">:white_circle:</td>
-        <td align="center">:white_circle:</td>
-        <td align="center">:white_circle:</td>
+        <td align="center">&nbsp;</td>
+        <td align="center">&nbsp;</td>
+        <td align="center">&nbsp;</td>
+        <td align="center">&nbsp;</td>
     </tr>
     <tr>
         <td rowspan='2' align="center">3</td>
@@ -71,10 +71,10 @@ C++ 스터디
         <td align="center">26 - 27</td>
     </tr>
     <tr>
-        <td align="center">:white_circle:</td>
-        <td align="center">:white_circle:</td>
-        <td align="center">:white_circle:</td>
-        <td align="center">:white_circle:</td>
+        <td align="center">&nbsp;</td>
+        <td align="center">&nbsp;</td>
+        <td align="center">&nbsp;</td>
+        <td align="center">&nbsp;</td>
     </tr>
     <tr>
         <td rowspan='2' align="center">4</td>
@@ -85,10 +85,10 @@ C++ 스터디
         <td align="center">34 - 35</td>
     </tr>
     <tr>
-        <td align="center">:white_circle:</td>
-        <td align="center">:white_circle:</td>
-        <td align="center">:white_circle:</td>
-        <td align="center">:white_circle:</td>
+        <td align="center">&nbsp;</td>
+        <td align="center">&nbsp;</td>
+        <td align="center">&nbsp;</td>
+        <td align="center">&nbsp;</td>
     </tr>
     <tr>
         <td rowspan='2' align="center">5</td>
@@ -99,10 +99,10 @@ C++ 스터디
         <td align="center">42 - 43</td>
     </tr>
     <tr>
-        <td align="center">:white_circle:</td>
-        <td align="center">:white_circle:</td>
-        <td align="center">:white_circle:</td>
-        <td align="center">:white_circle:</td>
+        <td align="center">&nbsp;</td>
+        <td align="center">&nbsp;</td>
+        <td align="center">&nbsp;</td>
+        <td align="center">&nbsp;</td>
     </tr>
     <tr>
         <td rowspan='2' align="center">6</td>
@@ -113,10 +113,10 @@ C++ 스터디
         <td align="center">50 - 51</td>
     </tr>
     <tr>
-        <td align="center">:white_circle:</td>
-        <td align="center">:white_circle:</td>
-        <td align="center">:white_circle:</td>
-        <td align="center">:white_circle:</td>
+        <td align="center">&nbsp;</td>
+        <td align="center">&nbsp;</td>
+        <td align="center">&nbsp;</td>
+        <td align="center">&nbsp;</td>
     </tr>
     <tr>
         <td rowspan='2' align="center">7</td>
@@ -127,10 +127,10 @@ C++ 스터디
         <td align="center"></td>
     </tr>
     <tr>
-        <td align="center">:white_circle:</td>
-        <td align="center">:white_circle:</td>
-        <td align="center">:white_circle:</td>
-        <td align="center">:white_circle:</td>
+        <td align="center">&nbsp;</td>
+        <td align="center">&nbsp;</td>
+        <td align="center">&nbsp;</td>
+        <td align="center">&nbsp;</td>
     </tr>
 </table>
 
