@@ -27,12 +27,12 @@ C++ 스터디
 
 <table>
     <tr>
-        <th width="10%" align="center">주차</th>
-        <th width="15%" align="center">날짜</th>
-        <th width="18.75%" align="center">YE7283</th>
-        <th width="18.75%" align="center">WooHyunKwon1012</th>
-        <th width="18.75%" align="center">corlexvusR</th>
-        <th width="18.75%" align="center">han-skyler</th>
+        <th align="center">주차</th>
+        <th align="center">날짜</th>
+        <th align="center">YE7283</th>
+        <th align="center">WooHyunKwon1012</th>
+        <th align="center">corlexvusR</th>
+        <th align="center">han-skyler</th>
     </tr>
     <tr>
         <td rowspan='2' align="center">1</td>
