@@ -8,10 +8,10 @@ C++ 스터디
 
 <table>
     <tr>
-        <td align="center"><a href="https://github.com/corlexvusR"><img src="https://avatars.githubusercontent.com/corlexvusR" width="120px" style="border-radius: 20px" alt=""></img></a></td>
-        <td align="center"><a href="https://github.com/WooHyunKwon1012"><img src="https://avatars.githubusercontent.com/WooHyunKwon1012" width="120px" style="border-radius: 20px" alt="" ></img></a></td>
-        <td align="center"><a href="https://github.com/YE7283"><img src="https://avatars.githubusercontent.com/YE7283" width="120px" style="border-radius: 20px" alt=""></img></a></td>
-        <td align="center"><a href="https://github.com/han-skyler"><img src="https://avatars.githubusercontent.com/han-skyler" width="120px" style="border-radius: 20px" alt=""></img></a></td>
+        <td align="center"><a href="https://github.com/corlexvusR"><img src="https://github.com/corlexvusR.png" width="120px" alt=""></img></a></td>
+        <td align="center"><a href="https://github.com/WooHyunKwon1012"><img src="https://github.com/WooHyunKwon1012.png" width="120px" alt=""></img></a></td>
+        <td align="center"><a href="https://github.com/YE7283"><img src="https://github.com/YE7283.png" width="120px" alt=""></img></a></td>
+        <td align="center"><a href="https://github.com/han-skyler"><img src="https://github.com/han-skyler.png" width="120px" alt=""></img></a></td>
     </tr>
     <tr>
         <td align="center"><a href="https://github.com/corlexvusR"><b>corlexvusR</b></a></td>
@@ -25,112 +25,112 @@ C++ 스터디
 
 ## :calendar: 일정
 
-<table style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;">
+<table>
     <tr>
-        <th style="padding: 8px; text-align: center; vertical-align: middle; font-weight: bold;">주차</th>
-        <th style="padding: 8px; text-align: center; vertical-align: middle; font-weight: bold;">날짜</th>
-        <th style="padding: 8px; text-align: center; vertical-align: middle; font-weight: bold;">YE7283</th>
-        <th style="padding: 8px; text-align: center; vertical-align: middle; font-weight: bold;">WooHyunKwon1012</th>
-        <th style="padding: 8px; text-align: center; vertical-align: middle; font-weight: bold;">corlexvusR</th>
-        <th style="padding: 8px; text-align: center; vertical-align: middle; font-weight: bold;">han-skyler</th>
-    </tr>
-    <tr>
-        <td rowspan='2' style="padding: 8px; text-align: center; vertical-align: middle;">1</td>
-        <td rowspan='2' style="padding: 8px; text-align: center; vertical-align: middle;">2025-08-27</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">2 - 3</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">4 - 6</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">7 - 8</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">9 - 10</td>
-    </tr>
-    <tr style="height: 30px;">
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
+        <th>주차</th>
+        <th>날짜</th>
+        <th>YE7283 (영은)</th>
+        <th>WooHyunKwon1012 (우현)</th>
+        <th>corlexvusR (형주)</th>
+        <th>han-skyler (지윤)</th>
     </tr>
     <tr>
-        <td rowspan='2' style="padding: 8px; text-align: center; vertical-align: middle;">2</td>
-        <td rowspan='2' style="padding: 8px; text-align: center; vertical-align: middle;">2025-09-03</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">11 - 12</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">13 - 14</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">15 - 17</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">18 - 19</td>
-    </tr>
-    <tr style="height: 30px;">
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
+        <td rowspan='2' align="center">1</td>
+        <td rowspan='2' align="center">2025-08-27</td>
+        <td align="center">2 - 3</td>
+        <td align="center">4 - 6</td>
+        <td align="center">7 - 8</td>
+        <td align="center">9 - 10</td>
     </tr>
     <tr>
-        <td rowspan='2' style="padding: 8px; text-align: center; vertical-align: middle;">3</td>
-        <td rowspan='2' style="padding: 8px; text-align: center; vertical-align: middle;">2025-09-10</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">20 - 21</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">22 - 23</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">24 - 25</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">26 - 27</td>
-    </tr>
-    <tr style="height: 30px;">
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
+        <td align="center">:white_circle:</td>
+        <td align="center">:white_circle:</td>
+        <td align="center">:white_circle:</td>
+        <td align="center">:white_circle:</td>
     </tr>
     <tr>
-        <td rowspan='2' style="padding: 8px; text-align: center; vertical-align: middle;">4</td>
-        <td rowspan='2' style="padding: 8px; text-align: center; vertical-align: middle;">2025-09-17</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">28 - 29</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">30 - 31</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">32 - 33</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">34 - 35</td>
-    </tr>
-    <tr style="height: 30px;">
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
+        <td rowspan='2' align="center">2</td>
+        <td rowspan='2' align="center">2025-09-03</td>
+        <td align="center">11 - 12</td>
+        <td align="center">13 - 14</td>
+        <td align="center">15 - 17</td>
+        <td align="center">18 - 19</td>
     </tr>
     <tr>
-        <td rowspan='2' style="padding: 8px; text-align: center; vertical-align: middle;">5</td>
-        <td rowspan='2' style="padding: 8px; text-align: center; vertical-align: middle;">2025-09-24</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">36 - 37</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">38 - 39</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">40 - 41</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">42 - 43</td>
-    </tr>
-    <tr style="height: 30px;">
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
+        <td align="center">:white_circle:</td>
+        <td align="center">:white_circle:</td>
+        <td align="center">:white_circle:</td>
+        <td align="center">:white_circle:</td>
     </tr>
     <tr>
-        <td rowspan='2' style="padding: 8px; text-align: center; vertical-align: middle;">6</td>
-        <td rowspan='2' style="padding: 8px; text-align: center; vertical-align: middle;">2025-10-01</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">44 - 45</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">46 - 47</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">48 - 49</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">50 - 51</td>
-    </tr>
-    <tr style="height: 30px;">
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
+        <td rowspan='2' align="center">3</td>
+        <td rowspan='2' align="center">2025-09-10</td>
+        <td align="center">20 - 21</td>
+        <td align="center">22 - 23</td>
+        <td align="center">24 - 25</td>
+        <td align="center">26 - 27</td>
     </tr>
     <tr>
-        <td rowspan='2' style="padding: 8px; text-align: center; vertical-align: middle;">7</td>
-        <td rowspan='2' style="padding: 8px; text-align: center; vertical-align: middle;">2025-10-08</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">52 - 53</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">54 - 55</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;">56 - 57</td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
+        <td align="center">:white_circle:</td>
+        <td align="center">:white_circle:</td>
+        <td align="center">:white_circle:</td>
+        <td align="center">:white_circle:</td>
     </tr>
-    <tr style="height: 30px;">
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
-        <td style="padding: 8px; text-align: center; vertical-align: middle;"></td>
+    <tr>
+        <td rowspan='2' align="center">4</td>
+        <td rowspan='2' align="center">2025-09-17</td>
+        <td align="center">28 - 29</td>
+        <td align="center">30 - 31</td>
+        <td align="center">32 - 33</td>
+        <td align="center">34 - 35</td>
+    </tr>
+    <tr>
+        <td align="center">:white_circle:</td>
+        <td align="center">:white_circle:</td>
+        <td align="center">:white_circle:</td>
+        <td align="center">:white_circle:</td>
+    </tr>
+    <tr>
+        <td rowspan='2' align="center">5</td>
+        <td rowspan='2' align="center">2025-09-24</td>
+        <td align="center">36 - 37</td>
+        <td align="center">38 - 39</td>
+        <td align="center">40 - 41</td>
+        <td align="center">42 - 43</td>
+    </tr>
+    <tr>
+        <td align="center">:white_circle:</td>
+        <td align="center">:white_circle:</td>
+        <td align="center">:white_circle:</td>
+        <td align="center">:white_circle:</td>
+    </tr>
+    <tr>
+        <td rowspan='2' align="center">6</td>
+        <td rowspan='2' align="center">2025-10-01</td>
+        <td align="center">44 - 45</td>
+        <td align="center">46 - 47</td>
+        <td align="center">48 - 49</td>
+        <td align="center">50 - 51</td>
+    </tr>
+    <tr>
+        <td align="center">:white_circle:</td>
+        <td align="center">:white_circle:</td>
+        <td align="center">:white_circle:</td>
+        <td align="center">:white_circle:</td>
+    </tr>
+    <tr>
+        <td rowspan='2' align="center">7</td>
+        <td rowspan='2' align="center">2025-10-08</td>
+        <td align="center">52 - 53</td>
+        <td align="center">54 - 55</td>
+        <td align="center">56 - 57</td>
+        <td align="center"></td>
+    </tr>
+    <tr>
+        <td align="center">:white_circle:</td>
+        <td align="center">:white_circle:</td>
+        <td align="center">:white_circle:</td>
+        <td align="center">:white_circle:</td>
     </tr>
 </table>
 
