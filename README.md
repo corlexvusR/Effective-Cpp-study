@@ -29,10 +29,10 @@ C++ 스터디
     <tr>
         <th>주차</th>
         <th>날짜</th>
-        <th>YE7283 (영은)</th>
-        <th>WooHyunKwon1012 (우현)</th>
-        <th>corlexvusR (형주)</th>
-        <th>han-skyler (지윤)</th>
+        <th>YE7283</th>
+        <th>WooHyunKwon1012</th>
+        <th>corlexvusR</th>
+        <th>han-skyler</th>
     </tr>
     <tr>
         <td rowspan='2' align="center">1</td>
