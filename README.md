@@ -2,6 +2,8 @@
 
 C++ 스터디
 
+<br>
+
 ## :pencil2: 작성 포맷
 
 스터디 기록 시 [위키의 매뉴얼](https://github.com/corlexvusR/Effective-Cpp-study/wiki)을 참고하여 작성해주세요.
