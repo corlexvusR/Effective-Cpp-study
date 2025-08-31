@@ -31,114 +31,109 @@ C++ 스터디
 
 ## :calendar: 일정
 
-<table>
-    <tr>
-        <th align="center">주차</th>
-        <th align="center">날짜</th>
-        <th align="center">YE7283</th>
-        <th align="center">WooHyunKwon1012</th>
-        <th align="center">corlexvusR</th>
-        <th align="center">han-skyler</th>
-    </tr>
-    <tr>
-        <td rowspan='2' align="center">1</td>
-        <td rowspan='2' align="center">2025-08-27</td>
-        <td align="center">2 - 3</td>
-        <td align="center">4 - 6</td>
-        <td align="center">7 - 8</td>
-        <td align="center">9 - 10</td>
-    </tr>
-    <tr>
-        <td align="center">&nbsp;</td>
-        <td align="center">&nbsp;</td>
-        <td align="center">&nbsp;</td>
-        <td align="center">&nbsp;</td>
-    </tr>
-    <tr>
-        <td rowspan='2' align="center">2</td>
-        <td rowspan='2' align="center">2025-09-03</td>
-        <td align="center">11 - 12</td>
-        <td align="center">13 - 14</td>
-        <td align="center">15 - 17</td>
-        <td align="center">18 - 19</td>
-    </tr>
-    <tr>
-        <td align="center">&nbsp;</td>
-        <td align="center">&nbsp;</td>
-        <td align="center">&nbsp;</td>
-        <td align="center">&nbsp;</td>
-    </tr>
-    <tr>
-        <td rowspan='2' align="center">3</td>
-        <td rowspan='2' align="center">2025-09-10</td>
-        <td align="center">20 - 21</td>
-        <td align="center">22 - 23</td>
-        <td align="center">24 - 25</td>
-        <td align="center">26 - 27</td>
-    </tr>
-    <tr>
-        <td align="center">&nbsp;</td>
-        <td align="center">&nbsp;</td>
-        <td align="center">&nbsp;</td>
-        <td align="center">&nbsp;</td>
-    </tr>
-    <tr>
-        <td rowspan='2' align="center">4</td>
-        <td rowspan='2' align="center">2025-09-17</td>
-        <td align="center">28 - 29</td>
-        <td align="center">30 - 31</td>
-        <td align="center">32 - 33</td>
-        <td align="center">34 - 35</td>
-    </tr>
-    <tr>
-        <td align="center">&nbsp;</td>
-        <td align="center">&nbsp;</td>
-        <td align="center">&nbsp;</td>
-        <td align="center">&nbsp;</td>
-    </tr>
-    <tr>
-        <td rowspan='2' align="center">5</td>
-        <td rowspan='2' align="center">2025-09-24</td>
-        <td align="center">36 - 37</td>
-        <td align="center">38 - 39</td>
-        <td align="center">40 - 41</td>
-        <td align="center">42 - 43</td>
-    </tr>
-    <tr>
-        <td align="center">&nbsp;</td>
-        <td align="center">&nbsp;</td>
-        <td align="center">&nbsp;</td>
-        <td align="center">&nbsp;</td>
-    </tr>
-    <tr>
-        <td rowspan='2' align="center">6</td>
-        <td rowspan='2' align="center">2025-10-01</td>
-        <td align="center">44 - 45</td>
-        <td align="center">46 - 47</td>
-        <td align="center">48 - 49</td>
-        <td align="center">50 - 51</td>
-    </tr>
-    <tr>
-        <td align="center">&nbsp;</td>
-        <td align="center">&nbsp;</td>
-        <td align="center">&nbsp;</td>
-        <td align="center">&nbsp;</td>
-    </tr>
-    <tr>
-        <td rowspan='2' align="center">7</td>
-        <td rowspan='2' align="center">2025-10-08</td>
-        <td align="center">52 - 53</td>
-        <td align="center">54 - 55</td>
-        <td align="center">56 - 57</td>
-        <td align="center"></td>
-    </tr>
-    <tr>
-        <td align="center">&nbsp;</td>
-        <td align="center">&nbsp;</td>
-        <td align="center">&nbsp;</td>
-        <td align="center">&nbsp;</td>
-    </tr>
-</table>
+### 1주차
+
+**회의 날짜: 2025-08-28**
+
+| 챕터 | 항목                                                                           | 작성자          |
+| ---- | ------------------------------------------------------------------------------ | --------------- |
+| 1    | 항목01 C++를 언어들의 연합체로 바라보는 안목은 필수                            | YE7283          |
+|      | 항목02 define을 쓰려거든 const, enum, inline을 떠올리자                        | YE7283          |
+|      | 항목03 낌새만 보이면 const를 들이대 보자                                       | YE7283          |
+|      | 항목04 객체를 사용하기 전에 반드시 그 객체를 초기화하자                        | WooHyunKwon1012 |
+| 2    | 항목05 C++가 은근슬쩍 만들어 호출해 버리는 함수들에 촉각을 세우자              | WooHyunKwon1012 |
+|      | 항목06 컴파일러가 만들어낸 함수가 필요 없으면 확실히 이들의 사용을 금해 버리자 | WooHyunKwon1012 |
+|      | 항목07 다형성을 가진 기본 클래스에서는 소멸자를 반드시 가상 소멸자로 선언하자  | corlexvusR      |
+|      | 항목08 예외가 소멸자를 떠나지 못하도록 붙들어 놓자                             | corlexvusR      |
+|      | 항목09 객체 생성 및 소멸 과정 중에는 절대로 가상 함수를 호출하지 말자          | han-skyler      |
+|      | 항목10 대입 연산자는 this의 참조자를 반환하게 하자                             | han-skyler      |
+
+### 2주차
+
+**회의 날짜: 2025-09-04**
+
+| 챕터 | 항목                                                                                 | 작성자          |
+| ---- | ------------------------------------------------------------------------------------ | --------------- |
+| 2    | 항목11 operator=에서는 자기대입에 대한 처리가 빠지지 않도록 하자                     | YE7283          |
+|      | 항목12 객체의 모든 부분을 빠짐없이 복사하자                                          | YE7283          |
+| 3    | 항목13 자원 관리에는 객체가 그만!                                                    | WooHyunKwon1012 |
+|      | 항목14 자원 관리 클래스의 복사 동작에 대해 진지하게 고찰하자                         | WooHyunKwon1012 |
+|      | 항목15 자원 관리 클래스에서 관리되는 자원은 외부에서 접근할 수 있도록 하자           | corlexvusR      |
+|      | 항목16 new 및 delete를 사용할 때는 형태를 반드시 맞추자                              | corlexvusR      |
+|      | 항목17 new로 생성한 객체를 스마트 포인터에 저장하는 코드는 별도의 한 문장으로 만들자 | corlexvusR      |
+| 4    | 항목18 인터페이스 설계는 제대로 쓰기엔 쉽게, 엉터리로 쓰기엔 어렵게 하자             | han-skyler      |
+|      | 항목19 클래스 설계는 타입 설계와 똑같이 취급하자                                     | han-skyler      |
+
+### 3주차
+
+**회의 날짜: 2025-09-11**
+
+| 챕터 | 항목                                                                                 | 작성자          |
+| ---- | ------------------------------------------------------------------------------------ | --------------- |
+| 4    | 항목20 값에 의한 전달보다는 상수객체 참조자에 의한 전달 방식을 택하는 편이 대개 낫다 | YE7283          |
+|      | 항목21 함수에서 객체를 반환해야 할 경우에 참조자를 반환하려고 들지 말자              | YE7283          |
+|      | 항목22 데이터 멤버가 선언될 곳은 private 영역임을 명심하자                           | WooHyunKwon1012 |
+|      | 항목23 멤버 함수보다는 비멤버 비프렌드 함수와 더 가까워지자                          | WooHyunKwon1012 |
+|      | 항목24 타입 변환이 모든 매개변수에 대해 적용되어야 한다면 비멤버 함수를 선언하자     | corlexvusR      |
+|      | 항목25 예외를 던지지 않는 swap에 대한 지원도 생각해 보자                             | corlexvusR      |
+| 5    | 항목26 변수 정의는 늦출 수 있는 데까지 늦추는 근성을 발휘하자                        | han-skyler      |
+|      | 항목27 캐스팅은 절약, 또 절약! 잊지 말자                                             | han-skyler      |
+
+### 4주차
+
+**회의 날짜: 2025-09-18**
+
+| 챕터 | 항목                                                                      | 작성자          |
+| ---- | ------------------------------------------------------------------------- | --------------- |
+| 5    | 항목28 내부에서 사용하는 객체에 대한 핸들을 반환하는 코드는 되도록 피하자 | YE7283          |
+|      | 항목29 예외 안전성이 확보되는 그날 위해 싸우고 또 싸우자!                 | YE7283          |
+|      | 항목30 인라인 함수는 미주알고주알 따져서 이해해 두자                      | WooHyunKwon1012 |
+|      | 항목31 파일 사이의 컴파일 의존성을 최대로 줄이자                          | WooHyunKwon1012 |
+| 6    | 항목32 public 상속 모형은 반드시 is-a를 따르도록 만들자                   | corlexvusR      |
+|      | 항목33 상속된 이름을 숨기는 일은 피하자                                   | corlexvusR      |
+|      | 항목34 인터페이스 상속과 구현 상속의 차이를 제대로 파악하고 구별하자      | han-skyler      |
+|      | 항목35 가상 함수 대신 쓸 것들도 생각해 두는 자세를 시시때때로 길러 두자   | han-skyler      |
+
+### 5주차
+
+**회의 날짜: 2025-09-25**
+
+| 챕터 | 항목                                                                              | 작성자          |
+| ---- | --------------------------------------------------------------------------------- | --------------- |
+| 6    | 항목36 상속받은 비가상 함수를 파생 클래스에서 재정의하는 것은 절대 금물!          | YE7283          |
+|      | 항목37 어떤 함수에 대해서도 상속받은 기본 매개변수 값은 절대로 재정의하지 말자    | YE7283          |
+|      | 항목38 has-a 혹은 is-implemented-in-terms-of를 모형화할 때는 객체 합성을 사용하자 | WooHyunKwon1012 |
+|      | 항목39 private 상속은 심사숙고해서 구사하자                                       | WooHyunKwon1012 |
+|      | 항목40 다중 상속은 심사숙고해서 사용하자                                          | corlexvusR      |
+| 7    | 항목41 템플릿 프로그래밍의 천릿길도 암시적 인터페이스와 컴파일 타임 다형성부터    | corlexvusR      |
+|      | 항목42 typename의 두 가지 의미를 제대로 파악하자                                  | han-skyler      |
+|      | 항목43 템플릿으로 만들어진 기본 클래스 안의 이름에 접근하는 방법을 알아 두자      | han-skyler      |
+
+### 6주차
+
+**회의 날짜: 2025-10-02**
+
+| 챕터 | 항목                                                                              | 작성자          |
+| ---- | --------------------------------------------------------------------------------- | --------------- |
+| 7    | 항목44 매개변수에 독립적인 코드는 템플릿으로부터 분리시키자                       | YE7283          |
+|      | 항목45 호환되는 모든 타입을 받아들이는 데는 멤버 함수 템플릿이 직방!              | YE7283          |
+|      | 항목46 타입 변환이 바람직할 경우에는 비멤버 함수를 클래스 템플릿 안에 정의해 두자 | WooHyunKwon1012 |
+|      | 항목47 타입에 대한 정보가 필요하다면 특성정보 클래스를 사용하자                   | WooHyunKwon1012 |
+|      | 항목48 템플릿 메타프로그래밍, 하지 않겠는가?                                      | corlexvusR      |
+| 8    | 항목49 new 처리자의 동작 원리를 제대로 이해하자                                   | corlexvusR      |
+|      | 항목50 new 및 delete를 언제 바꿔야 좋은 소리를 들을지를 파악해 두자               | han-skyler      |
+|      | 항목51 new 및 delete를 작성할 때 따라야 할 기존의 관례를 잘 알아 두자             | han-skyler      |
+
+### 7주차
+
+**회의 날짜: 2025-10-09**
+
+| 챕터 | 항목                                                              | 작성자          |
+| ---- | ----------------------------------------------------------------- | --------------- |
+| 8    | 항목52 위치지정 new를 작성한다면 위치지정 delete도 같이 준비하자  | YE7283          |
+| 9    | 항목53 컴파일러 경고를 지나치지 말자                              | YE7283          |
+|      | 항목54 TR1을 포함한 표준 라이브러리 구성요소와 편안한 친구가 되자 | WooHyunKwon1012 |
+|      | 항목55 부스트를 늘 여러분 가까이에                                | WooHyunKwon1012 |
 
 <br>
 
