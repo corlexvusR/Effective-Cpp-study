@@ -23,7 +23,7 @@ C++ 스터디
     </tr>
     <tr>
         <td align="center"><a href="https://github.com/corlexvusR"><b>corlexvusR</b></a></td>
-        <td align="center"><a href="https://github.com/c"><b>WooHyunKwon1012</b></a></td>
+        <td align="center"><a href="https://github.com/WooHyunKwon1012"><b>WooHyunKwon1012</b></a></td>
         <td align="center"><a href="https://github.com/YE7283"><b>YE7283</b></a></td>
         <td align="center"><a href="https://github.com/han-skyler"><b>han-skyler</b></a></td>
         <td align="center"><a href="https://github.com/SHIN-DONG-UK"><b>SHIN-DONG-UK</b></a></td>
