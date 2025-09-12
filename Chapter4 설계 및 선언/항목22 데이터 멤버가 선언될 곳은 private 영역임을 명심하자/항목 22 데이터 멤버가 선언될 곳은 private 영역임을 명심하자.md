@@ -121,17 +121,30 @@ class SpeedDataCollection {
 **방법 1: 지금까지 수집한 속도 데이터 전체의 평균값을 담는 어떤 데이터 멤버를 클래스 안에 넣어두는 방법**
 
 ```cpp
-private:
-    double currentAverage_;
-    int totalCount_;
-    double totalSum_;
+class SpeedDataCollection {
+	public:
+	    void addValue(int speed) {
+	        totalSum_ += speed;
+	        totalCount_++;
+	        currentAverage_ = totalSum_ / totalCount_;  // 여기서 계산
+	    }
+	    
+	    double averageSoFar() const {
+	        return currentAverage_;  // 즉시 반환
+	    }
+	    
+	private:
+	    double currentAverage_ = 0.0;
+	    int totalCount_ = 0;
+	    double totalSum_ = 0.0;
+};
 ```
 
 <aside>
 
 **장점:** `averageSoFar` 함수 호출 시 즉시 반환 (빠른 속도)
 
-**단점:**  평균값 유지를 위한 추가 메모리 필요 (객체 크기 증가)
+**단점:**  구현 복잡도 증가, 평균 계산 로직 필요
 
 </aside>
 
@@ -142,13 +155,30 @@ private:
 **방법 2: 호출될 때마다 평균값을 계산하는 방법**
 
 ```cpp
-private:
-    std::vector<int> allSpeeds_;
+class SpeedDataCollection {
+	public:
+	    void addValue(int speed) {
+	        allSpeeds_.push_back(speed);  // 단순 저장
+	    }
+	    
+	    double averageSoFar() const {
+	        if (allSpeeds_.empty()) return 0.0;
+	        
+	        int sum = 0;
+	        for (int speed : allSpeeds_) {  // 여기서 계산
+	            sum += speed;
+	        }
+	        return static_cast<double>(sum) / allSpeeds_.size();
+	    }
+	    
+	private:
+	    std::vector<int> allSpeeds_;
+};
 ```
 
 <aside>
 
-**장점:** 메모리 사용량 최소화 (객체 크기 작음)
+**장점:** 단순한 데이터 구조, 개별 데이터 보존
 
 **단점:** 매번 전체 데이터를 훑어야 함 (느린 속도)
 
@@ -156,15 +186,15 @@ private:
 
 - 수집한 데이터를 매번 훑어가는 코드가 포함된다.
 - 함수 자체의 속도가 느려진다.
-- `SpeedDataColleciton` 객체 하나의 크기가 1번 방법보다 작다.
+- `SpeedDataColleciton` 객체 하나의 크기는 데이터 크기에 비례한다.
 
-## 상황마다 좋은 방법은 다르다.
+## 상황마다 좋은 방법은 다르고, 방법을 나중에 바꿀 수 있다.
 
-**메모리가 부족한 환경**의 기기, **평균값이 자주 필요하지 않은 응용프로그램**
+**평균값이 자주 필요하지 않은 응용프로그램**
 
 → 방법 2
 
-**평균값을 빈번하게 사용**하고, **속도가 중요**하며, **메모리에 여유**가 있는 환경
+**평균값을 빈번하게 사용**하고, **속도가 중요한** 환경
 
 → 방법 1
 
@@ -241,6 +271,8 @@ protected 데이터 멤버도 문법적 일관성과 세밀한 접근 제어 측
 ## 캡슐화 정도의 공식
 
 어떤 것이 바뀌면(데이터 멤버가 클래스에서 제거되면), 깨질 가능성을 가진 코드가 늘어날 때 캡슐화의 정도는 그에 반비례해서 작아진다.
+
+**데이터 멤버를 변경할 때 영향받는 코드가 많을수록 캡슐화 정도는 낮아진다.**
 
 $$
 캡슐화 \ 정도 \ ∝ \ 1 \ / \ (변경 \ 시  \ 깨질 \ 수 \ 있는 \ 코드의 \ 양)
