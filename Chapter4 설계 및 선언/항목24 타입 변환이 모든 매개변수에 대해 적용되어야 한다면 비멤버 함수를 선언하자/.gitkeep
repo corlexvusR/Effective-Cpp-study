@@ -1,1 +1,199 @@
  
+# 항목 24: 타입 변환이 모든 매개변수에 대해 적용되어야 한다면 비멤버 함수를 선언하자 - 작성자: 서무성
+
+<aside>
+🔎
+
+# 이것만은 잊지말자!
+
+- 어떤 함수에 들어가는 모든 매개변수(this 포인터가 가리키는 객체도 포함해서)에 대해 타입 변환을 해 줄 필요가 있다면, 그 함수는 비멤버이어야 합니다.
+</aside>
+
+---
+
+- 왜 혼합형 연산(예: `정수 * 유리수`)을 자연스럽게 지원하려면, 연산자를 멤버 함수가 아닌 비멤버 함수로 만들어야 하는가? 에 대해 설명하는 파트
+
+---
+
+- “클래스에서 암시적 타입 변환을 지원하는 것은 일반적으로 못된 생각이다” -독자 여러분 반갑습니다-
+    - 독자 여러분 반갑습니다 부분에서 나오는 내용
+    - 예외가 있음 숫자를 만들 때 정수에서 유리수로 변환하는 것이나 int → double(C++ 기본 제공)의 경우
+    
+    ### 기본 생성자 정의 부분
+    
+    ```cpp
+    class A {
+    public:
+    	A();                                  // 기본 생성자
+    };
+    
+    class B {
+    public:
+    	explicit B(int x = 0, bool b = true); // 기본 생성자: "explicit"의 의미는
+                                            // 좀더 아래에서 확인할 수 있습니다.
+    };
+    
+    class C {
+    public:
+    	explicit C(int x);                    // 기본 생성자가 아닙니다.
+    };
+    ```
+    
+    ```cpp
+    void doSomething (B bObject); // B 타입의 객체를 하나 받는 함수
+    
+    B bObj1;
+    doSomething (bObj1);          // 문제없습니다. B 객체를 doSomething에 넘깁니다.
+    
+    B bObj2 (28);									// 좋습니다. int 인자 28로부터 B를 하나 만듭니다.
+    															// (bool 인자는 기본 값인 true가 자동으로 들어갑니다.)
+    
+    doSomething (28);             // 에러입니다! doSomething은 B를 취해야 합니다.
+    															// 그냥 int가 들어가면 안 됩니다. 게다가
+    															// int에서 B로 바뀌는 암시적 변환이 없습니다.
+    
+    doSomething (B(28));          // 좋습니다. 지금의 호출에서는
+    															// B 클래스의 생성자를 써서 int에서 B로
+    															// 명시적으로 변환(즉, 캐스팅) 합니다.
+    ```
+    
+    `doSomething(28);`이 에러가 나는 이유는 `B`의 생성자가 `explicit`으로 선언되었기 때문
+    
+    `explicit`은 컴파일러가 `int` 타입인 `28`을 `B` 타입의 객체로 **알아서(암시적으로) 바꿔주는 것을 막는 역할**
+    
+    **프로그래머가 예상하지도 못했던 (대개 바라지 않던) 타입 변환을 막아 주기 때문**에 `explicit` 선언을 적극 추천
+    
+
+**유리수(Rational Number)를 표현하기 위한 `Rational` 클래스를 선언**하는 부분
+
+```cpp
+class Rational { 
+public:
+	Rational(int numerator = 0,   // II 생성자에 일부러 explicit를 붙이지 
+					int denominator = 1)  // 않았습니다. int에서 Rational로의 암시적 
+																// II 변환을 허용하기 위해서 그런 것이죠.
+	
+	int numerator() const;        // II 분자 및 분모에 대한 접근용 함수입니다.
+	int denominator() const;      // 자세한 내용은 항목 22에서 확인하세요.
+ 
+ private:
+	 ...
+};
+```
+
+`Rational` 클래스가 `int`에서 `Rational`로의 암시적 변환을 허용한다고 가정합니다.
+
+유리수의 곱셈은 `Rational`  클래스 자체와 관련이 있으니까，`operator*`는 `Rational`
+클래스 안에 구현해 넣는 게 자연스러울 것 같습니다.
+
+항목 23: 관련된 함수를 그 클래스의 멤버로 두는 것은 (실질적인) 객체 지향 원칙에 맞장을 뜨는 것과 같을 수 있다. (이 부분에서 잠깐 제외)
+
+### **멤버 함수 버전 (일부만 성공하는 경우)**
+
+```cpp
+class Rational {
+public:
+    // ...
+    const Rational operator*(const Rational& rhs) const;
+};
+
+Rational oneEighth(1, 8);
+Rational oneHalf(1, 2);
+Rational result = oneHalf * oneEighth； // 좋습니다
+result = result * oneEighth             // 좋아요.
+
+// 혼합형(mixed-mode) 수치 연산
+// Rational을 int 같은 것과도 곱하기
+
+// Rational r(1, 2);
+result = oneHalf * 2 ；                 // 성공! 
+result = 2 * oneHalf ；                 // 에러! 
+
+result = oneHalf.operator*(2) ;        // 위 두 줄을 함수형태로 쓴 내용
+result = 2.operator*(oneHalf);
+
+// 1번 oneHalf.operator*(2)로 호출되며, 2가 Rational로 암시적 변환됨 [cite: 3579, 3590]
+// 2번 2는 멤버 함수 operator*를 가지고 있지 않음 [cite: 3580, 3584]
+// 즉 클래스와 연관없는 그냥 정수 2임
+```
+
+- C++ 초보자(나)를 위한 부가 설명 - const Rational operator*(const Rational& rhs) const
+    
+    [이 함수가 어째서 저런 식으로 선언되었는지에 대해(상수를 값으로 반환하:익 상수에 대한 참조자를 인자로 받아들이도록) 느낌이 안 오시는 분은 항목 3，20，21을 읽고 와 주세요]
+    
+    ### const Rational& rhs(매개변수 부분)
+    
+    - 항목 20: ‘값에 의한 전달’보다 ‘상수객체 참조자에 의한 전달’이 낫다.
+    - 참조자 쓰는 이유 함수에 객체를 전달할 때, 값으로 전달하면 객체의 복사본이 통째로 만들어져 비효율적이다. (아마 메모리 공간을 계속 차지하는건가..?)
+    
+    ### const Rational (반환 타입)
+    
+    - 항목 21: 함수에서 **객체를 반환해야 할 경우**, **참조자를 반환하지 말자**.
+    - 항목 3: 낌새만 보이면 **const**를 들이대자!
+    - Rational (값으로 반환)하는 이유**:** 곱셈의 결과(a * b)는 함수 안에서 계산되어 **새롭게 만들어진 객체**. 이 새로운 객체는 함수가 끝나면 사라지는 **'지역 변수**'이므로, 사라질 객체에 대한 참조자를 반환하면 심각한 에러로 이어진다.
+    - const를 붙이는 이유는 a * b = c 의 결과에 값을 대입하려는 경우 막기 위해서
+    
+    ### const (멤버 함수 한정자)
+    
+    항목 3: 낌새만 보이면 const를 들이대자!
+    
+    - a * b의 연산을 할 때, 이 함수는 a 객체(*this)의 내용을 절대 변경하지 않게 하기 위함
+    
+    | 코드 부분 | 의미 | 관련 항목 |
+    | --- | --- | --- |
+    | const Rational | 결과를 값으로 반환하되, 수정은 금지한다. | 항목 3, 21 |
+    | operator* | * 연산자를 오버로딩한다. | - |
+    | const Rational& rhs | 매개변수를 효율적으로 받되, 수정은 금지한다. | 항목 20 |
+    | 맨 뒤의 const | 이 함수는 객체(*this)의 상태를 바꾸지 않는다. | 항목 3 |
+    
+
+왜 하나는 되고 하나는 안될까? 답은 암시적 타입 변환{implicit type conversion)
+
+- `int` 를 `Rational` 클래스의 생성자에 주어 호줄하면 `Rational`로 둔갑시킬 수 있다.
+    
+    아마도 explicit가 선언이 되지 않아 암시적 변환이 일어난 것이지 않을까 조심스러운 추측
+    
+    ```cpp
+    const Rational temp (2 ) ; // II 2로부터 임시 Rational 객체를
+    													 // II 생성합니다.
+    result = oneHalf * temp；  // oneHalf.operator* (temp) ; 와 같습니다.
+    
+    물론 컴파일러가 이렇게 동작한 것은 명시호출(explicit)로 선언되지 않은 생성자가 있기 
+    때문입니다. Rational 생성자가 만약 명시호출 생성자였으면 다음의 코드 중 어느 쪽도 
+    컴파일되지 않습니다.
+    
+     result = oneHalf * 2； // 에러 ! (명시호줄 생성자에 의해 )
+    												// 2를 Rational로 바꿀 수 없습니다.
+     result = 2 * oneHalf;  // 역시 에러입니다. 문제도 같습니다.
+    ```
+    
+
+### 비멤버 함수 버전 (모두(혼합형) 성공하는 경우)
+
+```cpp
+class Rational {
+    // operator*가 멤버 함수로 선언되어 있지 않음
+};
+
+// 클래스 바깥에 비멤버 함수로 선언
+const Rational operator*(const Rational& lhs, const Rational& rhs) { ... }
+
+// 전체에서 operator*(Rational, Rational)를 찾아서 실행함
+// 이게 클래스 내부에 있는 경우에는 그냥 클래스가 사용할 경우 그 클래스가서 찾아오는 느낌?
+
+Rational oneFourth(1, 4);
+Rational result;
+result = oneFourth * 2； // 성공!
+result = 2 * oneFourth;  // 성공!
+```
+
+- **Q : `operator*`함수는 `Rational`클래스의 프렌드 함수로 두어도 될까요?**
+    
+    **A** : **‘아니오’**
+    
+    `operator*` 는 완전히 `Rational` 의 public 인터페이스만을 써서 구현할 수 있기 때문
+    
+
+오늘의 결론 : 멤버 함수의 반대는 프렌드 함수가 아니라 비멤버 함수이다.
+
+‘멤버 함수이면 안 되니까’가 반드시 프렌드 함수이어야 해’를 뜻하진 않는다는 사실만은 불변입니다.
